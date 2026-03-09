@@ -1,3 +1,4 @@
+import { AddProductDialog } from "@/components/ui/products/add-product-dialog";
 import { FaBox } from "react-icons/fa6";
 import { FaTable } from "react-icons/fa6";
 import { FaWarehouse } from "react-icons/fa6";
@@ -19,9 +20,9 @@ const Products = () => {
             </div>
 
             <div className="w-full h-fit px-7 mb-7">
-                <div className="bg-[#1D1D29] flex items-center justify-between rounded-lg font-jbm text-white p-4">
+                <div className="w-full bg-[#1D1D29] flex items-center justify-between rounded-lg font-jbm text-white p-4">
                     <p>Manage your inventory</p>
-                    <button className="bg-white py-1.5 px-4 text-[#202020] font-bold rounded-md border border-white hover:cursor-pointer hover:bg-transparent hover:text-white transition-all duration-300">Add Products</button>
+                    <AddProductDialog />
                 </div>
             </div>
             

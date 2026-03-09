@@ -10,7 +10,7 @@ export default function DashboardLayout({ children }) {
             {/* Sidebar */}
             <aside className="w-64 bg-[#1D1D29] text-white p-6 flex flex-col gap-6">
 
-                <h1 className="text-2xl font-bold">
+                <h1 className="text-2xl font-bold font-poppins">
                     Dashboard
                 </h1>
 
