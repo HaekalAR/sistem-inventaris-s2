@@ -11,6 +11,14 @@
   --font-inter: 'Inter', sans-serif;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
