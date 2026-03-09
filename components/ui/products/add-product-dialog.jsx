@@ -18,7 +18,7 @@ export function AddProductDialog() {
   return (
     <Dialog>
       <form>
-        <DialogTrigger render={<Button variant="outline" className={`bg-white py-4 px-4 text-[#202020] font-bold rounded-md border border-white hover:cursor-pointer hover:bg-transparent hover:text-white transition-all duration-300`}>Add Product</Button>} />
+        <DialogTrigger render={<button variant="outline" className={`bg-white py-2 px-4 text-[#202020] font-bold rounded-md border border-white hover:cursor-pointer hover:bg-transparent hover:text-white transition-all duration-300`}>Add Product</button>} />
         <DialogOverlay className="backdrop-blur-md bg-black/40" />
         <DialogContent className="sm:max-w-lg bg-[#12121E] border border-[#202020a8] p-7 font-jbm">
           <DialogHeader>
