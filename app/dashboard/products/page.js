@@ -49,7 +49,7 @@ const Products = async () => {
                             <p>Name</p>
                             <p>Category</p>
                             <p>Stock</p>
-                            <p className="text-right">Time</p>
+                            <p className="text-left">Time</p>
                             <p className="text-right">Actions</p>
                         </div>
                         {products.length > 0 ? products.map((product, index) => (
