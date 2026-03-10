@@ -61,7 +61,7 @@ const Products = async () => {
                                 <span className="text-gray-200 font-medium md:text-base text-xs">{product.name}</span>
                                 <span className="text-gray-400 md:text-base text-xs">{product.category}</span>
                                 <span className="text-gray-300 md:text-base text-xs">{product.stock}</span>
-                                <span className="text-gray-500 md:text-base text-xs text-right">{formatTime(product.updatedAt)}</span>
+                                <span className="text-gray-500 md:text-base text-xs text-left">{formatTime(product.updatedAt)}</span>
                                 <div className="flex justify-end gap-2">
                                     <DeleteProductButton productId={product.id} />
                                 </div>
