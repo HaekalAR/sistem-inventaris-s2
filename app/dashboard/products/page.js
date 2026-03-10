@@ -45,7 +45,7 @@ const Products = async () => {
                         <FaClockRotateLeft className="text-xl" />
                     </span>
                     <div className="flex flex-col gap-3 font-jbm overflow-y-auto md:max-h-[65vh] max-h-[65vh]">
-                        <div className="grid grid-cols-5 py-3 border-b mb-4 border-[#2e2e46] md:text-base text-sm text-gray-500 font-bold">
+                        <div className="grid grid-cols-5 gap-2 py-3 border-b mb-4 border-[#2e2e46] md:text-base text-sm text-gray-500 font-bold">
                             <p>Name</p>
                             <p>Category</p>
                             <p>Stock</p>
