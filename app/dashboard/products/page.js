@@ -19,8 +19,14 @@ const Products = async () => {
     const products = await getProducts();
 
     const formatTime = (date) => {
-        return new Date(date).toLocaleString();
+        const now = new Date();
+        const diff = Math.floor((now - new Date(date)) / 1000);
+        if (diff < 60) return `${diff} sec ago`;
+        if (diff < 3600) return `${Math.floor(diff / 60)} min ago`;
+        if (diff < 86400) return `${Math.floor(diff / 3600)} hour ago`;
+        return new Date(date).toLocaleDateString();
     };
+
 
     return (
         <div className="w-full min-h-screen bg-[#12121E] flex flex-col">
