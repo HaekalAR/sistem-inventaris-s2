@@ -27,9 +27,6 @@ const Dashboard = async () => {
     const allProducts = await db.select({ category: products.category }).from(products);
     const categoriesCount = new Set(allProducts.map(p => p.category)).size;
 
-    // Fetch Latest Activities with item names
-    // Note: In a real app we might join with products, but here we'll just fetch raw activities for now 
-    // or join if drizzle supports it easily here
     const latestActivities = await db.query.activities.findMany({
         limit: 5,
         orderBy: [desc(activities.timestamp)],
