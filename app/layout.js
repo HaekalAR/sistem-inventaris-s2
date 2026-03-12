@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inter, Poppins } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
@@ -63,6 +64,8 @@ export default function RootLayout({ children }) {
       >
         <ClientLogger/>
         {children}
+        <Analytics/>
+
       </body>
     </html>
   );
