@@ -69,6 +69,8 @@ app
  ├ layout.js
  └ page.js
 ```
+## Author
+Visit: https://sistem-inventaris-s2-ten.vercel.app/
 
 ## Author
 
