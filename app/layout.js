@@ -1,9 +1,9 @@
 "use client"
-import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inter, Poppins } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import ClientLogger from "./clientLogger";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,15 +57,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    console.log("Haekal Abdillah Ramadhan (G1A025004)");
-    console.log("Abdul Vaiz Vahry Iskandar (G1A025063)");
-  })
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ClientLogger/>
         {children}
       </body>
     </html>
